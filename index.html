@@ -414,16 +414,16 @@
                 <label class="form-field">
                     <span class="form-label">Ім'я</span>
                     <div class="form-group">
-                        <input class="form-input" type="text">
+                        <input class="form-input" type="text" name="name">
                         <svg class="form-icon" width="18" height="18">
                             <use href="./images/icons.svg#icon-person-f"></use>
                         </svg>
                     </div>
 
                     <label class="form-field">
-                        <div class="form-control">
-                            <span class="form-label">Телефон</span>
-                            <input class="form-input" type="text">
+                        <span class="form-label">Телефон</span>
+                        <div class="form-group">
+                            <input class="form-input" type="tel" name="phone_number">
                             <svg class="form-icon" width="18" height="18">
                                 <use href="./images/icons.svg#icon-phone-f"></use>
                             </svg>
@@ -431,30 +431,37 @@
                     </label>
 
                     <label class="form-field">
-                        <div class="form-control">
-                            <span class="form-label">Пошта</span>
-                            <input class="form-input" type="text">
+                        <span class="form-label">Пошта</span>
+                        <div class="form-group">
+                            <input class="form-input" type="email" name="email">
                             <svg class="form-icon" width="18" height="18">
                                 <use href="./images/icons.svg#icon-Vector-f"></use>
                             </svg>
                         </div>
                     </label>
 
+                    <span class="form-label">Коментар</span>
                     <label class="form-field">
-                        <span class="form-label">Коментар</span>
-                        <textarea class="form-message" name=""></textarea>
+                        <textarea class="form-message" placeholder="Введіть текст" name=""></textarea>
                     </label>
+
+
+                    <div class="agreement-checkbox-form">
+                        <label class="form-agreement">
+                            <input class="form-checkbox" type="checkbox" name="agreement-checkbox">
+                            <svg class="form-checkbox-icon" width="18" height="18">
+                                <use class="unchecked" href="./images/icons.svg#icon-uncheck"></use>
+                                <use class="checked" href="./images/icons.svg#icon-check"></use>
+                            </svg>
+
+                            <div class="form-agreement-text">
+                                <span class="form-agreement-text">Погоджуюся з розсилкою та приймаю </span><a
+                                    class="link form-agreement-link" href="#">Умови договору</a>
+                            </div>
+                        </label>
+                        <button type="submit" class="form-btn btn">Відправити</button>
+                    </div>
         </div>
-
-        <label class="form-agreement">
-            <input class="form-checkbox" type="checkbox" name="agreement-checkbox">
-            <div class="form-agreement-text">
-                <span class="form-agreement-text">Погоджуюся з розсилкою та приймаю </span><a
-                    class="link form-agreement-link" href="#">Умови договору</a>
-            </div>
-        </label>
-
-        <button type="submit" class="form-btn btn">Відправити</button>
         </form>
     </div>
 
