@@ -800,8 +800,10 @@ transform: scale(0.1);
     background-color: #188CE8;
 }
 
-.form-checkbox {
-    appearance: none;
+.close-btn-icon:hover, 
+.close-btn-icon:focus {
+    fill: var(--accent-color);
+    stroke: var(--accent-color);
 }
 
 .form-checkbox-icon .unchecked {
